@@ -1,0 +1,204 @@
+import pandas as pd
+
+import numpy as np
+
+import matplotlib.pyplot as plt
+
+ 
+
+data_set = pd.read_csv('diabetes.csv')
+
+ 
+
+x=data_set.iloc[:,:-1]  #independent variable
+
+y=data_set.iloc[:,-1]   #Dependent variable
+
+print('IV'.center(40,"_"),'\n',x.head())
+
+print('DV'.center(40,"_"),'\n',y.head())
+
+ 
+
+#check for missing values
+
+print(x.isnull().any())
+
+print(y.isnull().any())
+
+ 
+
+#summary
+
+print(x.info())
+
+ 
+
+#Turning into raw/NP format
+
+x=x.values
+
+y=y.values
+
+ 
+
+#spitting x and y into train and test
+
+from sklearn.model_selection import train_test_split
+
+x_train,x_test,y_train,y_test = train_test_split(x,y,test_size=0.25,random_state=0)
+
+ 
+
+#scaling
+
+from sklearn.preprocessing import StandardScaler
+
+scaler_x=StandardScaler()
+
+x_train = scaler_x.fit_transform(x_train)
+
+x_test = scaler_x.transform(x_test)
+
+ 
+
+# Machine : classifier ||
+
+from sklearn.naive_bayes import GaussianNB
+
+classifier=GaussianNB()
+
+classifier.fit(x_train , y_train)
+
+ 
+
+#predictions
+
+y_pred = classifier.predict(x_test)
+
+ 
+
+#Validating predictions using confusion matrix
+
+from sklearn.metrics import confusion_matrix
+
+cm = confusion_matrix(y_test,y_pred)
+
+print(cm)
+
+ 
+
+from sklearn.metrics import precision_recall_fscore_support
+
+prf = precision_recall_fscore_support(y_test,y_pred)
+
+print('\t\t\t\tZERO\t\tONE')
+
+print('Precision\t:',prf[0]*100)
+
+print('Recall\t\t:',prf[1]*100)
+
+print('F1 Measure\t:',prf[2]*100)
+
+print('Support\t\t:',prf[3])
+
+ 
+
+Output :
+
+___________________IV___________________ 
+
+    Pregnancies  Glucose  BloodPressure  ...   BMI  DiabetesPedigreeFunction  Age
+
+0            6      148             72  ...  33.6                     0.627   50
+
+1            1       85             66  ...  26.6                     0.351   31
+
+2            8      183             64  ...  23.3                     0.672   32
+
+3            1       89             66  ...  28.1                     0.167   21
+
+4            0      137             40  ...  43.1                     2.288   33
+
+[5 rows x 8 columns]
+
+___________________DV___________________ 
+
+ 0    1
+
+1    0
+
+2    1
+
+3    0
+
+4    1
+
+Name: Outcome, dtype: int64
+
+Pregnancies                 False
+
+Glucose                     False
+
+BloodPressure               False
+
+SkinThickness               False
+
+Insulin                     False
+
+BMI                         False
+
+DiabetesPedigreeFunction    False
+
+Age                         False
+
+dtype: bool
+
+False
+
+<class 'pandas.core.frame.DataFrame'>
+
+RangeIndex: 768 entries, 0 to 767
+
+Data columns (total 8 columns):
+
+ #   Column                    Non-Null Count  Dtype  
+
+---  ------                    --------------  -----  
+
+ 0   Pregnancies               768 non-null    int64  
+
+ 1   Glucose                   768 non-null    int64  
+
+ 2   BloodPressure             768 non-null    int64  
+
+ 3   SkinThickness             768 non-null    int64  
+
+ 4   Insulin                   768 non-null    int64  
+
+ 5   BMI                       768 non-null    float64
+
+ 6   DiabetesPedigreeFunction  768 non-null    float64
+
+ 7   Age                       768 non-null    int64  
+
+dtypes: float64(2), int64(6)
+
+memory usage: 48.1 KB
+
+None
+
+[[114  16]
+
+ [ 29  33]]
+
+                ZERO        ONE
+
+Precision    : [79.72027972 67.34693878]
+
+Recall        : [87.69230769 53.22580645]
+
+F1 Measure    : [83.51648352 59.45945946]
+
+Support        : [130  62]
+
