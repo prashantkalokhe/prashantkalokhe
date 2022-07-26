@@ -1,6 +1,6 @@
 - 👋 Hi, I’m @prashantkalokhe
-- 👀 I’m interested in Data science
-- 🌱 I’m currently learning Bachelor of Engineering Hadapsar Pune University
+- 👀 I’m interested in Java
+- 🌱 I’m currently learning Bachelor of Engineering In Pune University
 - 💞️ I’m looking to collaborate on Open-source
 
 
