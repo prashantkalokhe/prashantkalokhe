@@ -11,7 +11,7 @@
 
 <p align="left"> <a href="https://twitter.com/twitter" target="blank"><img src="https://img.shields.io/twitter/follow/twitter?logo=twitter&style=for-the-badge" alt="twitter" /></a> </p>
 
-- 🌱 I’m currently learning **Java Fullstack**
+- 🌱 I’m  learn **Java Fullstack** In Which Core Java, Hibernate, SprinBoot, HTML, CSS, Javascript, Angular, Node js. 
 
 - 📫 How to reach me **kalokheprashant23@gmail.com**
 
