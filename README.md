@@ -1,4 +1,15 @@
 <h1 align="center">Hi 👋, I'm Prashant Kalokhe</h1>
+
+#### Glad to see you here! 🤠
+
+<p align="center">
+
+    <img width="200" src="https://i.pinimg.com/originals/de/52/b7/de52b7bd3fbd77d5ca765bb6c40b3eb0.jpg">
+
+</p>
+
+<p>
+
 <h3 align="center">A passionate Java Fullstack developer from India</h3>
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=prashantkalokhe&label=Profile%20views&color=0e75b6&style=flat" alt="prashantkalokhe" /> </p>
