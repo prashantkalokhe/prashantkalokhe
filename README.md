@@ -47,3 +47,19 @@
 <p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=prashantkalokhe&show_icons=true&locale=en" alt="prashantkalokhe" /></p>
 
 <p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=prashantkalokhe&" alt="prashantkalokhe" /></p>
+
+The snake's eating up my contributions🐍.
+
+<p align="center">
+
+  <img  src="https://raw.githubusercontent.com/Elanza-48/Elanza-48/main/resources/img/github-contribution-grid-snake.svg"
+
+    alt="example" />
+
+</p>
+
+<br>
+
+<p align="left"> <a href="https://twitter.com/" target="blank"><img
+
+      src="https://img.shields.io/twitter/follow/?logo=twitter&style=for-the-badge&theme=nightowl" alt="" /></a> </p>
