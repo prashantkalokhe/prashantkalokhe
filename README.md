@@ -1,3 +1,7 @@
+<h1 align="center">Hi 👋, I'm Prashant Kalokhe</h1>
+
+<h3 align="center">A passionate Java Fullstack developer from India</h3>
+
 <p>
 
  <img src="https://github.com/Adam-pw/Adam-pw/blob/main/animation_500_kxa883sd.gif" width="300" height="300"/>
@@ -10,11 +14,11 @@
 
 <p>
 
-<h1 align="center">Hi 👋, I'm Prashant Kalokhe</h1>
 
 
 
-<h3 align="center">A passionate Java Fullstack developer from India</h3>
+
+
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=prashantkalokhe&label=Profile%20views&color=0e75b6&style=flat" alt="prashantkalokhe" /> </p>
 
