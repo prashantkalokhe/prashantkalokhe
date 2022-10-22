@@ -28,7 +28,7 @@
 ©
 
 
-<p align="left"> <a href="https://twitter.com/twitter" target="blank"><img src="https://img.shields.io/twitter/follow/twitter?logo=twitter&style=for-the-badge" alt="twitter" /></a> </p>
+<p align="left"> <a href="https://twitter.com/prashant2352000?t=9Hp3j-GMR54oaMQ-S02kYg&s=09" target="blank"><img src="https://img.shields.io/twitter/follow/twitter?logo=twitter&style=for-the-badge" alt="twitter" /></a> </p>
 
 - 🌱 I’m  learn **Java Fullstack** In Which Core Java, Hibernate, SprinBoot, HTML, CSS, Javascript, Angular, Node js. 
 
